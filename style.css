@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: cornsilk;
+}
+
+nav{
+    background-color: rgb(37, 9, 37);
+    color: aliceblue;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Mouse Memoirs', sans-serif;
+
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Mouse Memoirs', sans-serif;
+
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(174, 169, 179);
+}
+
+.info {
+    font-size: 22px;
+}
+
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.gameInfo h1{
+    font-size: 2.5rem;
+    color: #020202;
+}
+footer{
+    margin: 100px 400px 0px 400px;
+    padding: 8px;
+    background-color: #020202;
+    display: flex;
+    justify-content: center;
+    
+}
+footer h2{
+    color: aliceblue;
+   
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.imgbox img{
+    margin-top: 50px;
+    width:0;
+    transition: .5s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset {
+    margin: 20px 23px;
+    padding: 2px 18px;
+    background: #d7da49;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 31px;
+    font-weight: bolder;
+}
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #f30808;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    /* footer{
+        width: 300px;
+        margin: 10px 230px 0px 230px;
+    }
+    footer h2
+        {
+            font-size: 1.5rem;
+        } */
+
+        footer{
+            /* margin: 100px 400px 0px 400px; */
+            /* padding: 8px; */
+            background-color: #020202;
+            display: flex;
+            justify-content: space-around;
+            
+            width: 30vh;
+            
+        }
+        footer h2{
+            color: aliceblue;
+           font-size: 1.2rem;
+            font-family: 'Baloo Bhaina 2', cursive;
+           
+        }
+    .gameContainer{
+            margin-top: 50px;
+        }
+    .imgbox img{
+            margin-top: 10px;
+        }
+    
+  
+}
